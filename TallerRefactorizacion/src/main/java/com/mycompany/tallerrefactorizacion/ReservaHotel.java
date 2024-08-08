@@ -34,7 +34,8 @@ public class ReservaHotel{
     }
     
     public int calcularDiasDeReserva(){
-        return (int) ChronoUnit.DAYS.between(fechaInicio, fechaFin);
+     ChronoUnit unidadDeTiempo = ChronoUnit.DAYS;
+        return (int) unidadDeTiempo.between(fechaInicio, fechaFin);
     } 
     
 
