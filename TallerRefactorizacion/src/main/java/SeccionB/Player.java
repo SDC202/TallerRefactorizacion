@@ -41,4 +41,8 @@ public class Player {
     public int getWins(){
         return wins;
     }
+
+    public Selection getSelection() {
+        return selection;
+    }
 }
