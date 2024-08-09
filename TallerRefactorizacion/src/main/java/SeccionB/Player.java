@@ -13,7 +13,7 @@ import java.util.Random;
 public class Player {
     int wins;      
     private Selection selection;
-
+    
     public String makeChoice() {
         selection = getRandomSelection();
         return selection.getChoice();
@@ -44,5 +44,8 @@ public class Player {
 
     public Selection getSelection() {
         return selection;
+    }
+    public void incrementWins(){
+        wins++;
     }
 }
