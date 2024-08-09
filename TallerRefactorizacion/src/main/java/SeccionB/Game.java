@@ -25,8 +25,8 @@ class Game {
         while (!isGameWon()) {
             Selection p1Choice = player1.getSelection();
             Selection p2Choice = player2.getSelection();
-
-            String winner = determineWinner(p1Choice, p2Choice);
+            Selection sec = null;
+            String winner = sec.determineWinner(p1Choice, p2Choice);
             if (winner == null) {
                 System.out.println("It's a draw!");
                 draws++;
