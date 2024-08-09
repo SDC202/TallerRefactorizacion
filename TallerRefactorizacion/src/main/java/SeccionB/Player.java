@@ -12,7 +12,6 @@ import java.util.Random;
 
 public class Player {
     int wins;      
-    int winTotal;
     private Selection selection;
 
     public String makeChoice() {
@@ -36,8 +35,7 @@ public class Player {
     }
 
     public int setWins(){
-        winTotal = ++wins;
-        return winTotal;
+        return ++wins;
     }
 
     public int getWins(){
